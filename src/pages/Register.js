@@ -17,9 +17,12 @@ const Register = () => {
   const navigate = useNavigate()
 
   //media
-  const isNotMobile = useMediaQuery('(min-width:1000px')
+  const isNotMobile = useMediaQuery('(min-width:1000px)')
   //states
-  const [username,setUsername] = useState()
+  const [username,setUsername] = useState("")
+  const [email,setEmail] = useState("")
+  const [password,setPassword] = useState("")
+  const [error,setError] = useState("")
   return (
     <div>
       <h1>Register</h1>
