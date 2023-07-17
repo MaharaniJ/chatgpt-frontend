@@ -52,7 +52,7 @@ const Summary = () => {
       sx={{ boxShadow: 5 }}
       backgroundColor={theme.palette.background.alt}
     >
-      <Collapse in={error}>
+      <Collapse in={Boolean(error)}>
         <Alert severity="error" sx={{ mb: 2 }}>
           {error}
         </Alert>
